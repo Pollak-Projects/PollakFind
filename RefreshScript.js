@@ -934,6 +934,31 @@ function centerGrid(force = false) {
 
   
 
+// Frissítjük az oldal scroll viselkedését az aktuális orientáció alapján
+function updateScrollingBasedOnOrientation() {
+  const orientationOverlay = document.getElementById("orientationOverlay");
+  
+  // Ha portré módban vagyunk: innerWidth < innerHeight
+  if (window.innerWidth < window.innerHeight) {
+    // Overlay megjelenítése, scroll teljes tiltása
+    if (orientationOverlay) {
+      orientationOverlay.style.display = "flex";
+    }
+    document.body.style.overflow = "hidden";
+  } else {
+    // Landscape: overlay eltüntetése, csak függőleges scroll engedélyezése
+    if (orientationOverlay) {
+      orientationOverlay.style.display = "none";
+    }
+    document.body.style.overflowX = "hidden"; // vízszintes tiltva
+    document.body.style.overflowY = "auto";   // függőleges engedélyezve
+  }
+}
+
+// Ellenőrizzük az orientációt betöltéskor és minden ablakméret változásnál
+window.addEventListener("resize", updateScrollingBasedOnOrientation);
+window.addEventListener("orientationchange", updateScrollingBasedOnOrientation);
+document.addEventListener("DOMContentLoaded", updateScrollingBasedOnOrientation);
 
   
 }
