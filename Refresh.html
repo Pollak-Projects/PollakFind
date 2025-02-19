@@ -10,6 +10,9 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+
     <!-- Stíluslap -->
     <link rel="stylesheet" href="RefreshStyle.css" />
     <!-- JS script -->
@@ -141,7 +144,7 @@
           <option value="1">1. Emelet</option>
           <option value="2">2.Emelet</option>
         </select>
-        <!-- Kereső gomb -->
+        <!-- Kereső gombok -->
         <button class="search-button" onclick="runPathfinding()">
           Tanterem keresése
         </button>
@@ -150,14 +153,55 @@
         </button>
         <p>Bal klikk = indulási hely kiválasztása</p>
         <p>Jobb klikk = Cél kiválasztása</p>
+        <!-- Ikonok (social media) a legutolsó p után -->
+        <ul class="social-icons">
+          <li>
+            <a class="facebook" href="https://www.facebook.com/pmszki" target="_blank" rel="noopener noreferrer">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <i class="fab fa-facebook" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a class="tiktok" href="https://www.tiktok.com/@pollaktechnikum?lang=hu" target="_blank" rel="noopener noreferrer">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <i class="fab fa-tiktok" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a class="instagram" href="https://www.instagram.com/pollak.technikum/" target="_blank" rel="noopener noreferrer">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            
+              <a class="youtube" href="https://www.youtube.com/@pollaktv3186" target="_blank" rel="noopener noreferrer">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <i class="fab fa-youtube" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
     <!-- A grid ide generálódik -->
     <div class="grid" id="grid"></div>
-
     <!-- Orientation overlay – mobil portrét módban -->
     <div id="orientationOverlay">
       Fordítsa el mobilkészülékét a folytatáshoz
     </div>
+
+    
   </body>
 </html>
