@@ -18,7 +18,7 @@
   margin: 0 10px;
   text-align: center;
   text-decoration: none;
-  color: #92a7be;
+  color: #ffffffe7;
   transition: .5s;
 }
 ul li a span {
@@ -29,7 +29,7 @@ ul li a span:nth-child(1),
 ul li a span:nth-child(3){
   width:100%;
   height:3px;
-  background:#009cccbe;
+  background:#006786;
 }
 ul li a span:nth-child(1) {
   top:0;
